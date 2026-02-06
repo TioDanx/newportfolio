@@ -74,26 +74,32 @@ export default function Portfolio() {
   const skills = [
     {
       name: "Next.js",
-      level: 95,
+      level: 100,
       icon: Code,
       color: "from-gray-600 to-gray-800",
     },
     {
-      name: "Tailwind CSS",
-      level: 98,
+      name: "React.js",
+      level: 100,
+      icon: Zap,
+      color: "from-blue-500 to-cyan-600",
+    },
+    
+    {
+      name: "TailwindCSS",
+      level: 100,
       icon: Palette,
       color: "from-cyan-500 to-blue-600",
     },
-    { name: "React", level: 92, icon: Zap, color: "from-blue-500 to-cyan-600" },
     {
       name: "TypeScript",
-      level: 88,
+      level: 100,
       icon: Terminal,
       color: "from-blue-600 to-indigo-600",
     },
     {
-      name: "JavaScript",
-      level: 95,
+      name: "JavaScript ES6+",
+      level: 100,
       icon: Code,
       color: "from-yellow-500 to-orange-600",
     },
@@ -124,7 +130,7 @@ export default function Portfolio() {
         "Classic Tetris game built with React, featuring smooth animations, keyboard controls, and fully custom game logic.",
       tech: ["React", "TypeScript", "CSS Modules"],
       link: "https://react-tetris.vercel.app",
-      github: "https://github.com/danicampu/react-tetris",
+      github: "https://github.com/TioDanx/tetris-app",
       gradient: "from-emerald-500 to-teal-600",
     },
   ];
@@ -476,9 +482,6 @@ export default function Portfolio() {
                             {skill.name}
                           </span>
                         </div>
-                        <span className="text-sm text-slate-500 dark:text-slate-400 font-light">
-                          {skill.level}%
-                        </span>
                       </div>
                       <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2 overflow-hidden">
                         <motion.div

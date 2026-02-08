@@ -84,7 +84,7 @@ export default function Portfolio() {
       icon: Zap,
       color: "from-blue-500 to-cyan-600",
     },
-    
+
     {
       name: "TailwindCSS",
       level: 100,
@@ -98,9 +98,9 @@ export default function Portfolio() {
       color: "from-blue-600 to-indigo-600",
     },
     {
-      name: "JavaScript ES6+",
+      name: "Framer Motion",
       level: 100,
-      icon: Code,
+      icon: Sparkles,
       color: "from-yellow-500 to-orange-600",
     },
   ];
@@ -114,6 +114,22 @@ export default function Portfolio() {
       link: "https://cvai-campuzano.vercel.app",
       github: "https://github.com/TioDanX/CVAI",
       gradient: "from-purple-500 to-indigo-600",
+    },
+    {
+      title: "Flowbase – AI SaaS Landing",
+      description:
+        "High-converting, mobile-first landing page for an AI-powered workflow automation SaaS. Built with a minimalist dark UI, smooth Framer Motion animations, and strong performance optimization across all browsers, including Safari.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      link: "https://flowbase.vercel.app",
+      gradient: "from-emerald-500 to-green-600",
+    },
+    {
+      title: "Law Firm Landing Page",
+      description:
+        "Professional, performance-optimized landing page for a law firm. Designed with a mobile-first approach, clean and minimalist UI, fast load times, and clear CTAs focused on converting visitors into client inquiries.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      link: "https://lawyer-landing.vercel.app",
+      gradient: "from-slate-500 to-gray-700",
     },
     {
       title: "PsicoAI Chatbot",
@@ -562,14 +578,14 @@ export default function Portfolio() {
                         <ExternalLink size={16} />
                         <span className="text-sm font-light">Live Demo</span>
                       </motion.a>
-                      <motion.a
+                      {project.github && <motion.a
                         href={project.github}
                         className="flex items-center space-x-2 text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-colors group"
                         whileHover={{ x: 5 }}
                       >
                         <Github size={16} />
                         <span className="text-sm font-light">Code</span>
-                      </motion.a>
+                      </motion.a>}
                     </div>
                   </CardContent>
                 </Card>

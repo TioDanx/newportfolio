@@ -120,7 +120,7 @@ export default function Portfolio() {
       description:
         "High-converting, mobile-first landing page for an AI-powered workflow automation SaaS. Built with a minimalist dark UI, smooth Framer Motion animations, and strong performance optimization across all browsers, including Safari.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      link: "https://flowbase.vercel.app",
+      link: "https://saasexample-kohl.vercel.app/",
       gradient: "from-emerald-500 to-green-600",
     },
     {
@@ -128,7 +128,7 @@ export default function Portfolio() {
       description:
         "Professional, performance-optimized landing page for a law firm. Designed with a mobile-first approach, clean and minimalist UI, fast load times, and clear CTAs focused on converting visitors into client inquiries.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-      link: "https://lawyer-landing.vercel.app",
+      link: "https://lawyerlanding.vercel.app/",
       gradient: "from-slate-500 to-gray-700",
     },
     {
